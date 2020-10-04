@@ -1,0 +1,81 @@
+.wrap-header .wrap-header-menu{
+    width: 100%;
+    height: 100%;
+}
+
+.wrap-header .wrap-header-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.wrap-header .wrap-header-menu .list-mainmenu {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start: 0 !important;
+}
+
+.wrap-header .wrap-header-menu .list-mainmenu > li{
+    list-style: none;
+    color: black !important;
+    height: 4rem;
+    padding: 0 15px;
+    flex-wrap: wrap;
+    position: relative;
+    display: flex;
+}
+
+.wrap-header .wrap-header-menu .list-mainmenu > li >a{
+    color: black;
+    font-size: 1.1vw;
+    font-weight: 500;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.wrap-header .wrap-header-menu .list-mainmenu > li >a:hover{
+    text-decoration: none;
+}
+
+.wrap-header .wrap-header-menu .list-mainmenu > li > .animate{
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom:0;
+    left: 0;
+    background-color: black;
+    transition: 250ms;
+}
+
+.wrap-header .wrap-header-menu .list-mainmenu > li:hover .animate{
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    bottom:0;
+    left: 0;
+    background-color: black;
+}
+
+.wrap-header .wrap-header-menu .list-mainmenu > li > a > .dropdown-arrow{
+    width: 40px;
+}
+
+.wrap-header .wrap-header-menu .list-mainmenu > li > a:hover > .dropdown-arrow{
+    width: 40px;
+}
+
+.wrap-header .arrow{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.wrap-header .wrap-header-menu .list-mainmenu > li > a:hover > .dropdown-arrow > .arrow{
+    transition: 300ms;
+    transform: rotate(360deg);
+}

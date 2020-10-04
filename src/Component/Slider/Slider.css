@@ -1,0 +1,16 @@
+.wrap-all{
+    width: 100%;
+    position: relative;
+}
+
+.view-slider{
+    width: 100%;
+    height: 100%;
+}
+
+.view-slider .slider-content{
+    position: absolute;
+    display: inline-flex;
+    width: auto;
+    left: 0;
+}

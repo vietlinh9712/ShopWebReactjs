@@ -1,0 +1,25 @@
+.wrap-slider{
+    margin: 40px 0;
+}
+
+.wrap-slider .list-title{
+    display: flex;
+    list-style: none;
+    width: 70%;
+    margin: 0 auto;
+    padding-inline-start: 0!important;
+}
+
+.wrap-slider .list-title>li{
+    margin: 0 13px;
+    text-align: center;
+    font-size: 1.6vw;
+}
+.wrap-slider .list-title>li>a{
+    color: #555;
+}
+
+.wrap-slider .list-title>li>a:hover{
+    text-decoration: none;
+    color: black;
+}

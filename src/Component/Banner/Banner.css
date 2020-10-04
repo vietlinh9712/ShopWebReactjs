@@ -1,0 +1,10 @@
+.wrap-banner{
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.banner{
+    width: 100%;
+}

@@ -1,0 +1,41 @@
+.wrap-header{
+    border-bottom: 1px solid #fff;
+    z-index: 100;
+    width: 100%;
+    transition: 500ms;
+    position: absolute;
+}
+
+.hide-header{
+    position: fixed!important;
+    z-index: 10;
+}
+
+.wrap-header:hover{
+    background-color: #fff;
+}
+
+.background-white{
+    background-color: #fff;
+}
+
+.wrap-header .wrap-icon-header{
+    padding: 0 10px;
+}
+
+.wrap-header .wrap-all-icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.wrap-header .wrap-content-header{
+    position: relative;
+    z-index: 10;
+}
+
+.wrap-header .icon-wrap{
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
