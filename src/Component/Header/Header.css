@@ -3,12 +3,12 @@
     z-index: 100;
     width: 100%;
     transition: 500ms;
-    position: absolute;
+    position: relative;
 }
 
 .hide-header{
     position: fixed!important;
-    z-index: 10;
+    z-index: 888;
 }
 
 .wrap-header:hover{
@@ -38,4 +38,12 @@
     position: absolute;
     top: 25%;
     right: 0;
+}
+
+.wrap-header .amount-cart{
+    color: #5c5c5c;
+}
+
+.wrap-header .wrap-icon-header:hover{
+    text-decoration: none;
 }

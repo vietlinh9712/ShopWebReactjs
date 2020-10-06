@@ -1,5 +1,12 @@
+
+
 .wrap-slider{
-    margin: 40px 0;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.line-bottom{
+    border-bottom: 1px solid rgba(189, 188, 188, 0.68);
 }
 
 .wrap-slider .list-title{
@@ -22,4 +29,128 @@
 .wrap-slider .list-title>li>a:hover{
     text-decoration: none;
     color: black;
+}
+
+.wrap-slider .type-title{
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.wrap-slider .underline-title{
+    width: 0;
+   position: absolute;
+    height: 2px;
+    background-color: #1f1f1f;
+    bottom: 0;
+    transition: 500ms;
+}
+
+.width-100{
+    width: 100%!important;
+    transition: 500ms;
+}
+
+.btn-more{
+    height: 100%;
+    font-size: 13px;
+    font-weight: normal;
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    position: relative;
+    transition:color 0.5s ease;
+    z-index: 0;
+}
+
+.btn-explore-more{
+    display: inline-block;
+    line-height: normal;
+    border-radius: 0;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 200ms;
+}
+
+.bg-black{
+    background-color: #1f1f1f;
+    border: 1px solid #1f1f1f;
+}
+
+.bg-white{
+    background-color: #fff!important;
+    border: 1px solid #ffffff;
+}
+
+.color-white{
+    color: white;
+}
+
+.color-black{
+    color: #1f1f1f;
+}
+
+.color-black::after{
+    background: none!important;
+    color: white;
+}
+
+.color-white::after{
+    background-color: white;
+    color: #1f1f1f;
+}
+
+.btn-more::after {
+    position: absolute;
+    content: '';
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transform-origin:left;
+    transition:width 0.5s ease;
+    z-index:-1;
+}
+
+.btn-more:hover::after{
+    width: 100% !important;
+}
+
+.color-white:hover{
+    color: #1f1f1f!important;
+    text-decoration: none;
+}
+
+.bg-white:hover{
+    background: none!important;
+}
+
+.color-black:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.z-index2{
+    z-index: 4;
+}
+
+.display-none{
+    display: none;
+}
+
+.wrap-slider .title-small{
+    font-size: 1.2vw;
+    color: #5c5c5c;
+}
+
+.wrap-slider .title-big{
+    font-size: 1.8vw;
+    color: #5c5c5c;
+}
+
+.wrap-slider .title-big:hover{
+    color: #1f1f1f;
 }

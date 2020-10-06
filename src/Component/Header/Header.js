@@ -2,6 +2,8 @@ import React, {useEffect, useState} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HeaderMenu from "./Header-Menu";
 import './Header.css'
+import {CartContext} from "../../Context/Cart";
+import {SideNavContext} from "../sideNav/SideNav";
 
 
 function Header(props) {
@@ -40,9 +42,22 @@ function Header(props) {
                                 <a className={'wrap-icon-header'} href={'#'}>
                                     <img width={20} height={20} src={'./image/icon/search.png'}/>
                                 </a>
-                                <a className={'wrap-icon-header'} href={'#'}>
-                                    <img width={20} height={20} src={'./image/icon/shopping-cart.png'}/>
-                                </a>
+                                <SideNavContext.Consumer>
+                                    {({openSideNav}) => {
+                                        return(
+                                            <CartContext.Consumer>
+                                                {({Cart,}) => {
+                                                    return(
+                                                        <a href={'#!'} onClick={openSideNav} className={'wrap-icon-header'}>
+                                                            <img width={20} height={20} src={'./image/icon/shopping-cart.png'}/>
+                                                            <span className={'amount-cart'}>{(Cart.length<=0)?'':'('+Cart.length+')'}</span>
+                                                        </a>
+                                                    )
+                                                }}
+                                            </CartContext.Consumer>
+                                        )
+                                    }}
+                                </SideNavContext.Consumer>
                             </div>
                         </div>
 

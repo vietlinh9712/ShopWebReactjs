@@ -1,7 +1,10 @@
 .wrap-item{
     max-width: 270px;
     height: auto;
-    margin-right: 30px;
+}
+
+.mar-15{
+    margin-right: 15px;
 }
 
 .wrap-item > a:hover{
@@ -18,12 +21,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    transition: 500ms;
+    transition: 0.75s;
 }
 
 .wrap-item .wrap-img .wrap-img-2{
     opacity: 0;
-    transition: 500ms;
+    transition: 0.75s;
 }
 
 .wrap-item >a:hover .wrap-img-1{
@@ -98,5 +101,29 @@
     font-size: 0.9vw;
     height: 8%;
     color: white;
-    z-index: 10;
+    z-index: 5;
+}
+
+.display-none{
+    display: none;
+}
+
+.wrap-item .price-unit{
+    padding: 0 5px;
+    display: inline-flex;
+}
+
+.wrap-item .new-price{
+    font-size: 1.2vw;
+    line-height: 20px;
+}
+
+.wrap-item .old-price{
+    font-size: 1vw;
+    line-height: 20px;
+    text-decoration: line-through;
+}
+
+.color-red{
+    color: #ff0000;
 }
