@@ -17,6 +17,8 @@ export function CartProvider(props) {
                 ...cart.slice(indexProduct+1)
             ])
         }
+        if (product.isSale) setTotal(total + product.newPrice)
+        else setTotal(total + product.price)
 
     }
 

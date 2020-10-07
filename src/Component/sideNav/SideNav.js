@@ -64,7 +64,7 @@ export function SideNavProvider(props) {
                                                     <div className={'size-code'}>S/S123</div>
                                                     <div className={'amount-price'}>
                                                         <div className={'amount'}>{product.amount}</div>
-                                                        <div className={'price'}>{Format(product.price)} đ</div>
+                                                        <div className={'price'}>{(product.isSale)?Format(product.newPrice):Format(product.price)} đ</div>
                                                     </div>
                                                 </div>
                                             </div>
