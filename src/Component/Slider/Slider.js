@@ -1,15 +1,15 @@
 import React, {useEffect, useState} from "react";
 import './Slider.css'
 import Item from "../Item/Item";
-import {Product} from '../../asset/dataProduct';
 
 function Slider(props) {
-    const [transformSlider,setTransformSlider] = useState(0)
+    const [transformSlider,setTransformSlider] = useState(0);
 
     useEffect(() => {
         const slider = document.getElementById('slider'+props.index);
         slider.style.transform = "translateX("+transformSlider+"px)";
     })
+
 
     function onClickHandle(text) {
         if (text === 'next'){
@@ -26,9 +26,10 @@ function Slider(props) {
                 <a href={`#!`} onClick={() => onClickHandle('back')} id={'back-btn'} className={'set-btn pre-button'}><img width={15} height={15} src={'./image/icon/left-arrow.png'} /></a>
                 <div className={'view-slider'}>
                     <div id={'slider'+props.index} className={'slider slider-content'}>
-                        {Product.map((product,index) => {
+                        {props.listProduct.map((product,index) => {
                             if (!props.hasListType){
                                 return <Item
+                                    id={product.id}
                                     key={index}
                                     name={product.name}
                                     color={product.color}

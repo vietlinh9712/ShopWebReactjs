@@ -1,0 +1,14 @@
+.wrap-category{
+    width: 100%;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+    border-top: 1px solid #bdbcbc;
+    border-bottom: 1px solid #bdbcbc;
+    height: 50px;
+}
+
+.wrap-category .category-text{
+    line-height: 50px;
+    color: #5c5c5c;
+    font-size: 1vw;
+}

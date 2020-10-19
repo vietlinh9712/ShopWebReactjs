@@ -47,3 +47,11 @@
 .wrap-header .wrap-icon-header:hover{
     text-decoration: none;
 }
+
+.wrap-header .wrap-logo>img{
+    width: 20%;
+    height: auto;
+}
+.wrap-header .width-100>img{
+    width: 80% !important;
+}

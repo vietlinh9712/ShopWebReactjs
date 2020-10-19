@@ -86,7 +86,7 @@ export const Product = [
     },
     {
         id:8,
-        name: 'ADJACENT',
+        name: 'aaaaaaa',
         color: 'Black',
         isSale: true,
         price: 350000,

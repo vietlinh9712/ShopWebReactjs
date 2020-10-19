@@ -34,7 +34,7 @@ function Footer() {
                         </div>
                         <div className={'content-footer'}>
                             <div className="fb-page" data-href="https://www.facebook.com/TestChatbot-102796968213074"
-                                 data-tabs="timeline" data-width="" data-height="250" data-small-header="false"
+                                 data-tabs="timeline" data-width="300" data-height="250" data-small-header="false"
                                  data-adapt-container-width="true" data-hide-cover="    false" data-show-facepile="true">
                                 <blockquote cite="https://www.facebook.com/TestChatbot-102796968213074"
                                             className="fb-xfbml-parse-ignore"><a
