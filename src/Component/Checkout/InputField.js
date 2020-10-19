@@ -5,13 +5,13 @@ import Input from "reactstrap/es/Input";
 
 function InputField(props) {
     const {
-        field,form,
+        field,form,option,
         type,label,placeholder,disabled
     } = props
     const {name, value, onChange, onBlur} = field
 
     return(
-        <FormGroup>
+        <FormGroup>{console.log(option)}
             {label && <Label for={name}>{label}</Label> }
             <Input
                 id={name}
